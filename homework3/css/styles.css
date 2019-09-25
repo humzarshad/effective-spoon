@@ -1,0 +1,62 @@
+/* Humza Arshad 2019 */
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-image: url("../images/pidgeon-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #dddddd;
+  padding: 20px;
+}
+h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  color: #c12258;
+}
+.datacite {
+  color: black;
+  font-size: 18px;
+  padding-top: 15px;
+}
+a {
+  color: #c12258;
+  font-size: 18px;
+  text-decoration: underline;
+}
+/* input:focus {
+  border: 1px solid red;
+} */
+table {
+  border: 2px solid black;
+    /* border-radius: 10px; */
+}
+.colhead {
+  width: 150px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #7e0830;
+}
+td {
+  border-top: 2px solid black;
+  padding: 15px;
+  text-align: center;
+}
+.rowhead {
+  border-top: 2px solid black;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:hover {
+  background-color: #fab9cf;
+}
+footer {
+  color: white;
+  background-color: black;
+  min-height: 60px;
+  text-align: center;
+}
+tbody, thead {
+  border-radius: 10px;
+}
