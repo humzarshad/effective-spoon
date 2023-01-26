@@ -18,7 +18,7 @@ h2{
 
 p{
     font-size: 24px;
-    padding: 10px 10px 0px 0px;
+    padding: 10px 0px 0px 10px;
 }
 
 img{
@@ -84,7 +84,7 @@ footer{
 }
 
 footer p{
-    font: 20px;
+    font-size: 20px;
     text-align: right;
     padding: 15px 15px 15px 0px;
 }
