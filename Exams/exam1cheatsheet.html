@@ -1,0 +1,148 @@
+<!-- SI 339 STUDY GUIDE + CHEAT SHEET -->
+
+
+<!-- HTML DOM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href = "personal.html">Family</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1></h1>
+    <div>
+        <h2><p></p></h2>
+    </div>
+</body>
+</html>
+
+
+<!-- CSS COMBINATORS -->
+https://www.w3schools.com/css/css_combinators.asp
+
+
+
+<!-- CSS SELECTORS -->
+https://www.w3schools.com/cssref/css_selectors.php 
+https://www.freecodecamp.org/news/css-selectors-cheat-sheet/
+
+
+
+<!-- CENTERING IMAGES -->
+https://www.w3schools.com/howto/howto_css_image_center.asp
+
+
+
+<!-- BORDER -->
+Border (shorthand):
+    border: solid 1px #CC00AA;
+	
+Other Border Properties: 
+    border-style
+    border-width
+    border-color
+
+
+
+<!-- DISPLAY -->
+<p><div><h2> are blocks by default
+<img><button><span> are inline by default
+You can override the default in css using display:
+    display: inline
+    display: block
+    display: inline-block
+    display: none
+    https://www.w3schools.com/cssref/pr_class_display.asp
+
+
+
+<!-- BOX SIZING -->
+box-sizing (property) takes some of the “math” out of calculating absolute measurements for width/height
+Options: 
+    content-box: default (additive)
+        actual width = content width
+            excludes: padding + border + margin
+    border-box: width takes content, padding, and border into consideration
+        actual width = content width + padding + border + margin 
+    https://www.w3schools.com/cssref/tryit.asp?filename=trycss_play_box-sizing
+
+
+
+<!-- PSEUDO-CLASSES -->
+SINGLE colon
+A pseudo-class is used to define a special state of an element
+Structural
+	:nth-child, first-child, only-of-type
+Link 
+	:link, :visited
+User Action
+    :hover, :active, :focus
+Forms (interfaces) - covering later this semester
+    :enabled, :checked, :disabled
+
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+
+
+<!-- PSEUDO-ELEMENTS -->
+DOUBLE colon
+Keywords added to a selector to let you style a specific part of the element. 
+    These elements aren’t part of the DOM
+Can be used to style specific (unique) parts of the page
+    Examples -  ::first-letter, ::marker, ::selection 
+https://www.w3schools.com/css/css_pseudo_elements.asp
+
+
+
+<!-- POSITION PROPERTIES -->
+The position properties to know for Exam #1 are:
+static: default
+    relative: positioned “relative to itself”
+    absolute: element removed from the document flow & positioned relative to its nearest ancestor
+    fixed: won’t move period & positioned relative to the browser window
+
+Position properties are modified by the properties: top, right, bottom, left
+
+
+<!-- CSS Background Color -->
+background-color
+background (shorthand)
+https://www.w3schools.com/css/tryit.asp?filename=trycss_background-color_elements 
+
+
+<!-- OVERFLOW -->
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+auto - Similar to scroll, but it adds scrollbars only when necessary
+    https://www.w3schools.com/css/css_overflow.asp
+
+
+    
+<!-- Padding & Margin -->
+neither padding nor margin take a color
+
+
+
+<!-- OTHERS -->
+text-transform
+    https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+
+font-families
+
+Order of items in your CSS matters
+
+overflow property: controls what happens to content that is too big to fit into an area.
+
+The property z-index only works on positioned elements and flex items.
