@@ -110,7 +110,7 @@ Image Height
 
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
-nav li:hover, nav li:focus{
+li:hover, nav :focus{
   text-decoration: underline; /* From hw4 instructions */
 }
 
