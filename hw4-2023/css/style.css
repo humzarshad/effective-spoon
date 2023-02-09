@@ -108,21 +108,21 @@ footer{
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
 nav li:hover, nav li:focus{
-  text-decoration: underline;
+  text-decoration: underline; /* From hw4 instructions */
 }
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 .skip{
+  top: -40px; /* From hw4 instructions */
   position: absolute;
-  top: -40px;
-  visibility: hidden;
+  transform: translateY(-100%);
 }
 
-/* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+/* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/ 
 .skip:focus{
-  position: absolute;
-  top: 20px;
-  visibility: visible;
+  top: 20px; /* From hw4 instructions */
+  /* position: absolute; */
+  transform: translateY(0%);
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -135,6 +135,7 @@ nav li:hover, nav li:focus{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-gap: 15px;
+  box-sizing: border-box;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
@@ -142,20 +143,21 @@ first div in the grid  and place it in the grid. */
 .container div:first-child{
   grid-column: 1 / -1;
   background-image: url("../images/header.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;   
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next
  four rows in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
-.about {
+.about{
   grid-column: 2 / span 1;
   grid-row-start: 2;
 }
+
 .method{
   grid-column: 2 / span 1;
   grid-row-start: 3;
@@ -226,7 +228,7 @@ first div in the grid  and place it in the grid. */
     grid-column: 3 / span 2;
   }
 
-  .method, .contact, .about-image, and .clients-image{
+  .method, .contact, .about-image, .clients-image{
     grid-column: 2 / span 2;
   }
 
@@ -236,3 +238,10 @@ first div in the grid  and place it in the grid. */
   overflow: auto;
   }
 }
+
+/* 
+Qustions to ask:
+
+SKIP TO CONTENT
+IMAGE HEIGHT 
+*/
