@@ -167,7 +167,7 @@ body{
 /* h4::after{
     content: "\01F44D";
 } */
-li::nth-child(2){
+.card li:nth-child(2):after{
     content: "\01F44D";
 }
 }
