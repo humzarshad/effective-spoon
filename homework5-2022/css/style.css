@@ -1,7 +1,7 @@
 /* Step 1: Animate the logo with keyframes.  (Here is a keyframes reference.) It should start at a width of 25px and grow to 475px.  It should also start with an opacity of 0 and end with an opacity of 1. The animation should take 5 seconds and only happen when the page is loaded. **You can complete this step later in the process - it won’t affect the larger views.  */
 #logo{
     animation: logo 5s;
-    width: 475px;
+    /* width: 475px; */
 }
 
 @keyframes logo {
