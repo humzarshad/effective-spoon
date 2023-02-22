@@ -164,9 +164,6 @@ body{
 }
 
 /* Step 21: Without using list-style-type add the thumbs up entity as shown in the cards. This is a challenge problem. You should not give or receive help when completing it.**For some people the thumbs up is not printing as yellow. That is fine. */
-/* h4::after{
-    content: "\01F44D";
-} */
 .card li:nth-child(2):after{
     content: "\01F44D";
 }
