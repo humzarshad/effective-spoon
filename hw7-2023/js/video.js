@@ -23,21 +23,21 @@ document.querySelector("#pause").addEventListener("click", function () {
 	}
 );
 
-document.querySelector("#slower").addEventListener("click", function () {
+document.querySelector("#slower").addEventListener("click", function() {
 	console.log("Slow down Video");
 	video.playbackRate -= 0.1;
 	console.log("Speed is", video.playbackRate);
-	}
+}
 );
 
-document.querySelector("#faster").addEventListener("click", function () {
+document.querySelector("#faster").addEventListener("click", function() {
 	console.log("Speed up Video", video.playbackRate);
 	video.playbackRate += 0.1;
 	console.log("Speed is", video.playbackRate);
-	}
+}
 );
 
-document.querySelector("#skip").addEventListener("click", function () {
+document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Forward 10 seconds");
 	if (video.currentTime + 10 > video.duration) {
 		video.currentTime = 0;
@@ -47,10 +47,10 @@ document.querySelector("#skip").addEventListener("click", function () {
 		video.currentTime += 10;
 		console.log("Video current time is", video.currentTime);
 	}
-	}
+}
 );
 
-document.querySelector("#mute").addEventListener("click", function () {
+document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted) {
 		document.getElementById("mute").innerHTML = "Mute";
 		console.log("Unmuted");
@@ -61,23 +61,23 @@ document.querySelector("#mute").addEventListener("click", function () {
 		console.log("Muted");
 		video.muted = true;
 	}
-	}
+}
 );
 
-document.querySelector("#slider").addEventListener("change", function () {
+document.querySelector("#slider").addEventListener("change", function() {
 	var slider = document.querySelector("#slider").value;
 	video.volume = slider / 100;
 	document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
 	console.log("The current value is", video.volume);
-	}
+}
 );
 
-document.querySelector("#vintage").addEventListener("click", function () {
+document.querySelector("#vintage").addEventListener("click", function() {
 	document.querySelector(".video").className += " oldSchool";
-	}
+}
 );
 
-document.querySelector("#orig").addEventListener("click", function () {
+document.querySelector("#orig").addEventListener("click", function() {
 	document.querySelector(".video").className = "video";
-	}
+}
 );
